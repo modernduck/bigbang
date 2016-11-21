@@ -1,2 +1,3 @@
 **/node_modules
+**/dist
 bigbang-client/src/app/config/config.ts

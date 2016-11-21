@@ -1,0 +1,28 @@
+<h2>Ratio</h2>
+    
+    <table class="table">
+      <tr><td>Leader</td><td>{{leadCount}}</td></tr>
+      <tr><td>Follow</td><td>{{followCount}}</td></tr>
+      <tr><td>Summary</td><td>{{leadCount + followCount | number}}</td></tr>
+    </table>
+
+    <h3>Package</h3>
+    <table class="table">
+      <tr *ngFor="let item of packages;let i = index">
+        <td>{{package_names[i]}}</td><td>{{item.lead + item.follow | number}} L:F ({{item.lead}} : {{item.follow}})</td>
+      </tr>
+      <tr><td>Summary</td><td>{{sumPackage | number}}</td></tr>
+    </table>
+
+    <h3>Bus</h3>
+    <table class="table">
+      <tr  *ngFor="let item of bus_packages;let i = index">
+        <td>{{bus_package_names[i]}}</td><td>{{item | number}}</td>
+      </tr>
+      
+    </table>
+
+    <h3>Jack And Jill</h3>
+    <table class="table">
+      <tr *ngFor="let item of jack_jills; let i = index"><td>{{jack_jill_names[i]}}</td><td>{{item}}</td></tr>
+    </table>
