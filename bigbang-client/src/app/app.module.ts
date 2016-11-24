@@ -6,12 +6,16 @@ import { firebaseConfig } from "./config/config";
 import { AngularFireModule } from 'angularfire2';
 import { AppComponent } from './app.component';
 import { StatComponent } from "./stat/stat.component"
+import { UserFormComponent} from "./user-form/user-form.component"
+import {InputFileComponent} from "./user-form/input-file.component"
 import { routing } from "./app.route"
 
 @NgModule({
   declarations: [
     AppComponent,
-    StatComponent
+    StatComponent,
+    UserFormComponent,
+    InputFileComponent
   ],
   imports: [
     BrowserModule,

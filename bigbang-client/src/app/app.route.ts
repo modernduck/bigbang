@@ -1,6 +1,7 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { StatComponent } from "./stat/stat.component"
+import { UserFormComponent} from "./user-form/user-form.component"
 //test
 const appRoutes: Routes = [
   {
@@ -12,6 +13,10 @@ const appRoutes: Routes = [
     path: 'stat',
     component: StatComponent
   },
+  {
+    path: 'form',
+    component: UserFormComponent
+  }
 
 //PaymentsListComponent
 ];
