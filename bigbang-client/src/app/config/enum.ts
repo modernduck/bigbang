@@ -3,7 +3,8 @@ export  class BigbangPackage{
        INTERMEDIATE:0,
        INTERMEDIATE_ADVANCED:1,
        ADVANCED:2,
-       SOLO:3
+       SOLO:3,
+       PARTY:4
     }
 
     public static PACKAGE_NAMES:Array<string> = [
