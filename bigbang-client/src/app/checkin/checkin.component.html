@@ -1,0 +1,36 @@
+<div >
+  <h2>CHECK IN</h2>
+  <div>
+    <input type="text" placeholder="search for anything" [(ngModel)]="q" class="form-control" (keypress)="onPress($event)" />
+  </div>
+  length : {{users.length}}
+  <table class="table" >
+    <thead>
+      <th>I</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Leader/Follow</th>
+      <th>Diet</th>
+      <th>Email</th>
+      <th>Package</th>
+      <th>Additional Workshop</th>
+      <th>J&J</th>
+      <th>Bus</th>
+    </thead>
+    <tbody>
+        <tr (click)="checkin(item)" *ngFor="let item of users; let i = index" class="checkin-{{item.checkin}}" >
+          <td>{{i}}</td>
+          <td>{{item?.first_name}}</td>
+          <td>{{item?.last_name}}</td>
+          <td>{{item?.is_lead}}</td>
+          <td>{{item?.diet}}</td>
+          <td>{{item?.email}}</td>
+          <td>{{item?.payment.Package}}</td>
+          <td>{{item?.payment.AdditionalWorkshop}}</td>
+          <td>{{item?.payment.JackAndJill}}</td>
+          <td>{{item?.payment.BusBooking}}</td>
+        </tr>
+    </tbody>
+  </table>
+
+<div>

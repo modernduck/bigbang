@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { StatComponent } from "./stat/stat.component"
 import { UserFormComponent} from "./user-form/user-form.component"
 import {InputFileComponent} from "./user-form/input-file.component"
+import { CheckinComponent } from "./checkin/checkin.component"
 import { routing } from "./app.route"
 
 @NgModule({
@@ -15,7 +16,8 @@ import { routing } from "./app.route"
     AppComponent,
     StatComponent,
     UserFormComponent,
-    InputFileComponent
+    InputFileComponent,
+    CheckinComponent
   ],
   imports: [
     BrowserModule,
