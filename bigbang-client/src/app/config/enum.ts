@@ -10,7 +10,8 @@ export  class BigbangPackage{
         "Full Pass - Intermediate",
         "Full Pass - Intermediate Advanced",
         "Full Pass - Advanced",
-        "Full Pass - Solo Authentic Jazz"
+        "Full Pass - Solo Authentic Jazz",
+        "Party Pass"
     ]
 
     
@@ -20,7 +21,8 @@ export  class BigbangPackage{
             "Full Pass - Intermediate":0,
             "Full Pass - Intermediate Advanced":1,
             "Full Pass - Advanced":2,
-            "Full Pass - Solo Authentic Jazz":3
+            "Full Pass - Solo Authentic Jazz":3,
+            "Party Pass":4
         }
         return key_value[key];
     }
